@@ -1,0 +1,24 @@
+.app-container {
+  @extend .d-flex, .flex-nowrap, .vh-100;
+}
+
+.flashes {
+  @extend .pe-none, .fixed-top, .text-center;
+
+  > .flash {
+    @extend .alert, .d-inline-block;
+
+    &.flash-notice {
+      @extend .alert-info;
+    }
+  }
+}
+
+.main-content {
+  @extend .d-flex, .flex-column;
+
+  background-color: $main-content-bg;
+  color: $main-content-fg;
+  overflow-y: scroll;
+  width: calc(100% - #{$navigation-width});
+}

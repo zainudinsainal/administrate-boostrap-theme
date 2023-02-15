@@ -1,0 +1,61 @@
+.main-content__body {
+  legend {
+    @extend .fs-4, .my-2;
+  }
+
+  .field_with_errors {
+    @extend .text-danger;
+  }
+
+  .form-actions > input {
+    @extend .btn;
+  }
+
+  .field-unit {
+    @extend .row, .mb-3;
+  }
+
+  .field-unit__field {
+    @extend .col-10, .position-relative;
+
+    > input:not([type="checkbox"]) {
+      @extend .form-control;
+    }
+
+    > input[type="checkbox"] {
+      @extend .form-check-input, .mt-2;
+    }
+
+    > select {
+      @extend .form-select;
+    }
+
+    > textarea {
+      @extend .form-control;
+
+      min-height: 10rem;
+    }
+  }
+
+  .field-unit__label {
+    @extend .col-2;
+
+    > label {
+      @extend .col-form-label, .pb-1, .w-100;
+
+      border-bottom: 1px dashed #ccc;
+    }
+  }
+
+  #error_explanation {
+    @extend .alert, .alert-danger;
+
+    > h2 {
+      @extend .h4, .alert-heading;
+    }
+
+    > ul {
+      @extend .mb-0;
+    }
+  }
+}

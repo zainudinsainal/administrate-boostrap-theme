@@ -1,0 +1,86 @@
+.main-content__body {
+  @extend .container-fluid, .mb-3;
+
+  table {
+    @extend .table-striped;
+  }
+
+  > dl {
+    @extend .row;
+
+    dt {
+      @extend .col-2, .text-end;
+
+      min-height: 2rem;
+    }
+
+    dd {
+      @extend .col-10;
+    }
+  }
+
+  a {
+    @extend .text-decoration-none;
+  }
+
+  table {
+    @extend .table;
+  }
+
+  .attribute-data > table {
+    @extend .table-bordered;
+  }
+
+  .attribute--nested {
+    > div {
+      @extend .d-flex;
+    }
+
+    legend {
+      @extend .fs-5, .border-bottom;
+    }
+
+    .attribute-data {
+      @extend .ps-4;
+    }
+  }
+
+  .cell-label__sort-indicator > svg {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  .cell-label__sort-indicator--desc > svg {
+    transform: rotate(180deg);
+  }
+
+  .form-actions > input {
+    @extend .btn-primary;
+  }
+
+  .js-table-row {
+    > td {
+      @extend .text-center, .p-1;
+
+      &.cell-data {
+        @extend .text-start, .p-2;
+      }
+    }
+
+    .action-show {
+      @extend .link-secondary;
+    }
+
+    .action-edit {
+      @extend .btn, .btn-sm, .btn-secondary;
+    }
+
+    [data-method="delete"] {
+      @extend .btn-danger;
+    }
+
+    [data-method="delete"] {
+      @extend .btn, .btn-sm;
+    }
+  }
+}

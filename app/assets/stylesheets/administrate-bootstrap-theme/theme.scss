@@ -1,0 +1,14 @@
+// from: node_modules/bootstrap/scss
+@import "bootstrap/bootstrap";
+
+@import "selectize"; // included in Administrate
+
+@import "variables";
+
+@import "components/navigation";
+@import "components/content_header";
+@import "components/content_body";
+@import "components/form";
+@import "components/pagination";
+
+@import "base";
